@@ -1,0 +1,44 @@
+<h2 style="text-align: center;">Registration Form</h2>
+
+<form [formGroup]="registrationForm">
+    <div class="imgcontainer">
+      <img src="/newapp/shares/src/assets/images/login.png" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" formControlName="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" formControlName="psw" required>
+
+      <label for="psw"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" formControlName="email" required>
+
+
+      <label for="psw"><b>FirstName</b></label>
+      <input type="text" placeholder="Enter FirstName" name="fname" formControlName="fname" required>
+          
+      <label for="psw"><b>LastName</b></label>
+      <input type="text" placeholder="Enter LastName" name="lname" formControlName="lname" required>
+
+      <label for="psw"><b>Mobile Number</b></label>
+      <input type="text" placeholder="Enter Mobile Number" name="mobile" formControlName="mobile" required>
+
+
+      <button type="submit" (click)="register()">Register</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+
+
+
+
+
